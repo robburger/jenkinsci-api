@@ -1,32 +1,29 @@
 name: Main Workflow
 
-on: [push, pull_request]
+on:
+  pull_request:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup NodeJS ${{ matrix.node-version }}
+      - name: Setup NodeJS 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 12.x
 
       - name: Print versions
-        run: |
-          node --version
-          yarn --version
+        run: node --version && yarn --version
 
       - name: Run 'yarn install' and 'yarn test:prod'
-        run: |
-          yarn install
-          yarn test:prod
+        run: yarn install && yarn test:prod
 
       - name: Upload coverage
         uses: coverallsapp/github-action@master

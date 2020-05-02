@@ -2,7 +2,11 @@
 
 A TypeScript wrapper around the Jenkins API
 
-![Main Workflow](https://github.com/robburger/jenkinsci-api/workflows/.github/workflows/main_workflow.yml/badge.svg)
+![Main Workflow](https://github.com/robburger/jenkinsci-api/workflows/Main%20Workflow/badge.svg?branch=master)
+
+[![Coverage Status](https://coveralls.io/repos/github/robburger/jenkinsci-api/badge.svg?branch=master)](https://coveralls.io/github/robburger/jenkinsci-api?branch=master)
+[![dependencies Status](https://david-dm.org/robburger/jenkinsci-api/status.svg)](https://david-dm.org/robburger/jenkinsci-api)
+[![devDependencies Status](https://david-dm.org/robburger/jenkinsci-api/dev-status.svg)](https://david-dm.org/robburger/jenkinsci-api?type=dev)
 
 This is an API wrapper around the Jenkins API, usable in NodeJS and a web browser. TypeScript type definitions are
 included to help with development.
