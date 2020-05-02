@@ -1,0 +1,51 @@
+### Project
+coverage
+dist
+docs
+node_modules
+demo/package-lock.json
+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+*.log
+
+### IDE
+.idea/*
+.vscode/*
+
+### Linux
+*~
+
+### macOS
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+### Windows
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
