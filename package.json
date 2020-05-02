@@ -1,0 +1,112 @@
+{
+  "name": "jenkinsci-api",
+  "version": "0.1.0",
+  "description": "A TypeScript wrapper around the Jenkins API",
+  "keywords": [
+    "jenkins",
+    "ci",
+    "api",
+    "typescript"
+  ],
+  "main": "dist/jenkinsci-api.cjs.js",
+  "module": "dist/jenkinsci-api.es5.js",
+  "browser": "dist/jenkinsci-api.umd.min.js",
+  "typings": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "author": "Rob Burger <rob.burgs@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robburger/jenkinsci-api"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "installConfig": {
+    "pnp": true
+  },
+  "scripts": {
+    "build": "yarn run clean && yarn run tsc && yarn run rollup && yarn run docs",
+    "clean": "rimraf dist",
+    "coverage": "jest --coverage --no-cache",
+    "deploy-docs": "ts-node tools/gh-pages-publish",
+    "docs": "rimraf docs && typedoc --out docs --exclude '**/__mocks__/**' --excludeExternals --target es6 --includeDeclarations --excludePrivate --mode modules src",
+    "docs:watch": "watch 'yarn docs' ./src",
+    "format": "prettier --write '{src,test}/**/*.{ts,json}' '*.md'",
+    "lint": "yarn run lint:lib && yarn run lint:tests",
+    "lint:lib": "tslint --project ./tsconfig.json -t codeFrame 'src/**/*.ts'",
+    "lint:tests": "tslint --project ./tsconfig.test.json -t codeFrame 'test/**/*.ts'",
+    "rollup": "rollup -c rollup.config.ts",
+    "start": "rollup -c rollup.config.ts -w",
+    "test": "jest",
+    "test:prod": "yarn run lint && yarn run coverage",
+    "test:watch": "jest --watch",
+    "tsc": "tsc --module commonjs"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.4",
+    "jest": "^25.5.3",
+    "lodash.camelcase": "^4.3.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.7.6",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.1",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "supports-color": "^7.1.0",
+    "ts-jest": "^25.4.0",
+    "tslib": "^1.11.1",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^9.0.0",
+    "typedoc": "^0.17.6",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "packageJson": "./package.json",
+        "tsConfig": "./tsconfig.test.json",
+        "diagnostics": true
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "coverageDirectory": "coverage/",
+    "coverageReporters": [
+      "lcov",
+      "html",
+      "text-summary"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "roots": [
+      "<rootDir>/src/",
+      "<rootDir>/test/"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*(*.)(spec|test).ts*(x)"
+    ],
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$"
+    ],
+    "preset": "ts-jest"
+  }
+}

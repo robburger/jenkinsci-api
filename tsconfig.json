@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "es2015",
+    "declarationDir": "dist/types",
+    "outDir": "dist/lib",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "src/__mocks__"
+  ]
+}
