@@ -1,6 +1,10 @@
 name: Main Workflow
 
-on: [push, pull_request]
+on:
+  pull_request:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -24,4 +28,4 @@ jobs:
       - name: Upload coverage
         uses: coverallsapp/github-action@master
         with:
-          github-token: ${{ secrets.TEST_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
