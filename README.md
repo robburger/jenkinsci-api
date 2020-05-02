@@ -2,6 +2,8 @@
 
 A TypeScript wrapper around the Jenkins API
 
+![Main Workflow](https://github.com/robburger/jenkinsci-api/workflows/.github/workflows/main_workflow.yml/badge.svg)
+
 This is an API wrapper around the Jenkins API, usable in NodeJS and a web browser. TypeScript type definitions are
 included to help with development.
 
