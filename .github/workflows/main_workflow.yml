@@ -11,22 +11,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
       - name: Setup NodeJS ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-
       - name: Print versions
       - run: |
           node --version
           yarn --version
-
       - name: Run 'yarn install' and 'yarn test:prod'
       - run: |
           yarn install
           yarn test:prod
-
       - name: Upload coverage
         uses: coverallsapp/github-action@master
         with:
