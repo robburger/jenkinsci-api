@@ -45,13 +45,16 @@ export interface User {
 export interface Job {
   /** internal Jenkins model */
   _class?: string;
-  /**  */
+  /**
+   * a list of build actions
+   * usually build actions and plugin actions
+   */
   actions?: object[];
   /** description of the job */
   description?: string;
   /** display name of the job */
   displayName?: string;
-  /**  */
+  /** TODO (define) displayNameOrNull */
   displayNameOrNull?: string;
   /** full display name of the job, including enclosing folder names */
   fullDisplayName?: string;
@@ -91,17 +94,20 @@ export interface Job {
   lastUnsuccessfulBuild?: BuildSummary;
   /** next build number used by the job */
   nextBuildNumber?: number;
-  /**  */
+  /**
+   * a list of build properties
+   * usually build parameter properties and plugin properties
+   */
   property?: object[];
-  /**  */
-  queueItem?: string;
+  /** details of a queued item, if any */
+  queueItem?: QueueItem;
   /** indicates if concurrent builds are permitted */
   concurrentBuild?: boolean;
   /** indicates if the job is disabled */
   disabled?: boolean;
   /** a summary list of downstream jobs */
   downstreamProjects?: JobSummary[];
-  /**  */
+  /** TODO (define) labelExpression */
   labelExpression?: string;
   /** the type of SCM used by the job */
   scm?: object;
@@ -145,4 +151,37 @@ export interface JobSummary {
   url?: string;
   /** color of the job indicating status */
   color?: string;
+}
+
+export interface QueueItem {
+  /** internal Jenkins model */
+  _class?: string;
+  /**
+   * indicates if the queued item is blocked
+   * usually true if concurrent builds are not permitted
+   */
+  blocked?: boolean;
+  /**
+   * indicates if the queued item is buildable
+   * usually true if concurrent builds are permitted, but waiting for available executor
+   */
+  buildable?: boolean;
+  /** global build id */
+  id?: number;
+  /** timestamp of entry into queue */
+  inQueueSince?: number;
+  /** build parameters */
+  params?: string;
+  /** indicates if the queued item is stuck */
+  stuck?: boolean;
+  /** summary of the task in queue */
+  task?: object;
+  /** url of queued item */
+  url?: string;
+  /** reason for being queued */
+  why?: string;
+  /** timestamp of when queued item will be buildable */
+  buildableStartMilliseconds?: number;
+  /** indicates if the queued item is pending */
+  pending?: boolean;
 }
