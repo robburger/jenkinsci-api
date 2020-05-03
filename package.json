@@ -32,7 +32,6 @@
     "build": "yarn run clean && yarn run tsc && yarn run rollup && yarn run docs",
     "clean": "rimraf dist",
     "coverage": "jest --coverage --no-cache",
-    "deploy-docs": "ts-node tools/gh-pages-publish",
     "docs": "rimraf docs && typedoc --out docs --exclude '**/__mocks__/**' --excludeExternals --target es6 --includeDeclarations --excludePrivate --mode modules src",
     "docs:watch": "watch 'yarn docs' ./src",
     "format": "prettier --write '{src,test}/**/*.{ts,json}' '*.md'",

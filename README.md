@@ -2,7 +2,8 @@
 
 A TypeScript wrapper around the Jenkins API
 
-![Main Workflow](https://github.com/robburger/jenkinsci-api/workflows/Main%20Workflow/badge.svg?branch=master)
+[![Main Workflow](https://github.com/robburger/jenkinsci-api/workflows/Main%20Workflow/badge.svg?branch=master)](https://github.com/robburger/jenkinsci-api/actions?query=workflow%3A%22Main+Workflow%22+branch%3Amaster)
+[![Docs Workflow](https://github.com/robburger/jenkinsci-api/workflows/Docs%20Workflow/badge.svg?branch=master)](https://github.com/robburger/jenkinsci-api/actions?query=workflow%3A%22Docs+Workflow%22+branch%3Amaster)
 
 [![Coverage Status](https://coveralls.io/repos/github/robburger/jenkinsci-api/badge.svg?branch=master)](https://coveralls.io/github/robburger/jenkinsci-api?branch=master)
 [![dependencies Status](https://david-dm.org/robburger/jenkinsci-api/status.svg)](https://david-dm.org/robburger/jenkinsci-api)
