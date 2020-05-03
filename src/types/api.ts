@@ -45,8 +45,10 @@ export interface User {
 export interface Job {
   /** internal Jenkins model */
   _class?: string;
-  /** a list of build actions
-   * usually build actions and plugin actions */
+  /**
+   * a list of build actions
+   * usually build actions and plugin actions
+   */
   actions?: object[];
   /** description of the job */
   description?: string;
@@ -92,8 +94,10 @@ export interface Job {
   lastUnsuccessfulBuild?: BuildSummary;
   /** next build number used by the job */
   nextBuildNumber?: number;
-  /** a list of build properties
-   * usually build parameter properties and plugin properties */
+  /**
+   * a list of build properties
+   * usually build parameter properties and plugin properties
+   */
   property?: object[];
   /** details of a queued item, if any */
   queueItem?: QueueItem;
@@ -152,11 +156,15 @@ export interface JobSummary {
 export interface QueueItem {
   /** internal Jenkins model */
   _class?: string;
-  /** indicates if the queued item is blocked
-   * usually true if concurrent builds are not permitted */
+  /**
+   * indicates if the queued item is blocked
+   * usually true if concurrent builds are not permitted
+   */
   blocked?: boolean;
-  /** indicates if the queued item is buildable
-   * usually true if concurrent builds are permitted, but waiting for available executor */
+  /**
+   * indicates if the queued item is buildable
+   * usually true if concurrent builds are permitted, but waiting for available executor
+   */
   buildable?: boolean;
   /** global build id */
   id?: number;
