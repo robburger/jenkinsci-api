@@ -1,4 +1,12 @@
 /**
+ * Build info
+ *
+ * @property {string} buildPath - The path to the build
+ * @example GET : https://{jenkinsHost}/job/:buildPath/api/json
+ */
+export type BuildResponse = Build;
+
+/**
  * User info
  *
  * @property {string} username - A Jenkins user
@@ -26,6 +34,82 @@ export type JobsResponse = Jobs;
 /**
  * API Objects
  */
+
+export interface Build {
+  /** internal Jenkins model */
+  _class?: string;
+  /**
+   * a list of build actions
+   * usually build actions and plugin actions
+   */
+  actions?: object[];
+  /** list of artifacts saved for the build */
+  artifacts?: Artifacts[];
+  /** indicates if the build is in progress */
+  building?: boolean;
+  /** description of the build */
+  description?: string;
+  /** display name of the build */
+  displayName?: string;
+  /** duration of the build in milliseconds */
+  duration?: number;
+  /** estimated duration in milliseconds */
+  estimatedDuration?: number;
+  /** summary of the executor */
+  executor?: ExecutorSummary;
+  /** full display name of the build */
+  fullDisplayName?: string;
+  /** string id of the build */
+  id?: string;
+  /** indicates if the build log should be kept */
+  keepLog?: boolean;
+  /** build number of the build */
+  number?: number;
+  /** global queue id of the build */
+  queueId?: number;
+  /** result of the build */
+  result?: string;
+  /** timestamp of when the build started */
+  timestamp?: number;
+  /** url of the build */
+  url?: string;
+  /** TODO (define) builtOn */
+  builtOn?: string;
+  /** a list of change sets for the build */
+  changeSets?: ChangeSet[];
+  /** a list of culprits for the build */
+  culprits?: Culprit[];
+}
+
+export interface Artifacts {
+  /** display path of the artifact */
+  displayPath?: string;
+  /** filename of the artifact */
+  fileName?: string;
+  /** relative path of the artifact */
+  relativePath?: string;
+}
+
+export interface ChangeSet {
+  /** internal Jenkins model */
+  _class?: string;
+  /** a list of change set items */
+  items?: object[];
+  /** kind of change set, e.g. git */
+  kind?: string;
+}
+
+export interface Culprit {
+  /** absolute url of the culprit */
+  absoluteUrl?: string;
+  /** full name of the culprit */
+  fullName?: string;
+}
+
+export interface ExecutorSummary {
+  /** internal Jenkins model */
+  _class?: string;
+}
 
 export interface User {
   /** internal Jenkins model */

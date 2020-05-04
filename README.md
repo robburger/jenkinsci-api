@@ -24,7 +24,7 @@ Until all features are covered, the following list will keep track of what still
 - [ ] jenkins
   - [ ] info
 - [ ] build
-  - [ ] get
+  - [x] get
   - [ ] log
   - [ ] log stream
   - [ ] stop
