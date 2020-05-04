@@ -1,0 +1,61 @@
+# This file assumes the following Jenkins setup
+# - Jenkins running on http://localhost:8080
+# - Admin user called "username" with a password with value "password"
+# - Folder at the root level called "example-folder"
+# - FreeStyle project called "example-job-freestyle" under the "example-folder"
+
+# GET root
+GET http://localhost:8080/api/json?pretty=true
+Accept: application/json
+Authorization: Basic username password
+
+###
+
+# GET root (depth=1)
+GET http://localhost:8080/api/json?pretty=true&depth=1
+Accept: application/json
+Authorization: Basic username password
+
+###
+
+# GET folder
+GET http://localhost:8080/job/example-folder/api/json?pretty=true
+Accept: application/json
+Authorization: Basic username password
+
+###
+
+# GET folder (depth=1)
+GET http://localhost:8080/job/example-folder/api/json?pretty=true&depth=1
+Accept: application/json
+Authorization: Basic username password
+
+###
+
+# GET job
+GET http://localhost:8080/job/example-folder/job/example-job-freestyle/api/json?pretty=true
+Accept: application/json
+Authorization: Basic username password
+
+###
+
+# GET job (depth=1)
+GET http://localhost:8080/job/example-folder/job/example-job-freestyle/api/json?pretty=true&depth=1
+Accept: application/json
+Authorization: Basic username password
+
+###
+
+# GET build
+GET http://localhost:8080/job/example-folder/job/example-job-freestyle/1/api/json?pretty=true
+Accept: application/json
+Authorization: Basic username password
+
+###
+
+# GET build (depth=1)
+GET http://localhost:8080/job/example-folder/job/example-job-freestyle/1/api/json?pretty=true&depth=1
+Accept: application/json
+Authorization: Basic username password
+
+###
