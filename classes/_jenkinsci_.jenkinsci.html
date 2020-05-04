@@ -89,6 +89,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_jenkinsci_.jenkinsci.html#defaults" class="tsd-kind-icon">defaults</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_jenkinsci_.jenkinsci.html#getbuild" class="tsd-kind-icon">get<wbr>Build</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_jenkinsci_.jenkinsci.html#getjob" class="tsd-kind-icon">get<wbr>Job</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_jenkinsci_.jenkinsci.html#getjobs" class="tsd-kind-icon">get<wbr>Jobs</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_jenkinsci_.jenkinsci.html#getuser" class="tsd-kind-icon">get<wbr>User</a></li>
@@ -110,7 +111,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/09be2e3/src/jenkinsci.ts#L9">jenkinsci.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/7cb8cd3/src/jenkinsci.ts#L10">jenkinsci.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -150,7 +151,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/09be2e3/src/jenkinsci.ts#L21">jenkinsci.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/7cb8cd3/src/jenkinsci.ts#L22">jenkinsci.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -159,6 +160,37 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types_lib_.jenkinsrequest.html" class="tsd-signature-type">JenkinsRequest</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getbuild" class="tsd-anchor"></a>
+					<h3>get<wbr>Build</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Build<span class="tsd-signature-symbol">(</span>buildPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_api_.build.html" class="tsd-signature-type">Build</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/7cb8cd3/src/jenkinsci.ts#L31">jenkinsci.ts:31</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets details about a build</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>buildPath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Required, the path to the build</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_api_.build.html" class="tsd-signature-type">Build</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -172,7 +204,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/09be2e3/src/jenkinsci.ts#L41">jenkinsci.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/7cb8cd3/src/jenkinsci.ts#L51">jenkinsci.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -195,7 +227,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/09be2e3/src/jenkinsci.ts#L45">jenkinsci.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/7cb8cd3/src/jenkinsci.ts#L55">jenkinsci.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -218,7 +250,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/09be2e3/src/jenkinsci.ts#L37">jenkinsci.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/7cb8cd3/src/jenkinsci.ts#L47">jenkinsci.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -249,7 +281,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/09be2e3/src/jenkinsci.ts#L28">jenkinsci.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/7cb8cd3/src/jenkinsci.ts#L38">jenkinsci.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -268,6 +300,9 @@
 				<ul>
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_api_build_.html">&quot;api/build&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_api_index_.html">&quot;api/index&quot;</a>
@@ -310,6 +345,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_jenkinsci_.jenkinsci.html#defaults" class="tsd-kind-icon">defaults</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_jenkinsci_.jenkinsci.html#getbuild" class="tsd-kind-icon">get<wbr>Build</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_jenkinsci_.jenkinsci.html#getjob" class="tsd-kind-icon">get<wbr>Job</a>

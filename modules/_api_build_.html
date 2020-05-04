@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;client&quot; | jenkinsci-api</title>
+	<title>&quot;api/build&quot; | jenkinsci-api</title>
 	<meta name="description" content="Documentation for jenkinsci-api">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_client_.html">&quot;client&quot;</a>
+					<a href="_api_build_.html">&quot;api/build&quot;</a>
 				</li>
 			</ul>
-			<h1>Module &quot;client&quot;</h1>
+			<h1>Module &quot;api/build&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -69,16 +69,9 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_client_.clientfactory.html" class="tsd-kind-icon">Client<wbr>Factory</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_client_.html#client" class="tsd-kind-icon">client</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="_client_.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_api_build_.html#getbuild" class="tsd-kind-icon">get<wbr>Build</a></li>
 							</ul>
 						</section>
 					</div>
@@ -87,70 +80,51 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="client" class="tsd-anchor"></a>
-					<h3>client</h3>
+					<a name="getbuild" class="tsd-anchor"></a>
+					<h3>get<wbr>Build</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, jenkinsHost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_client_.clientfactory.html" class="tsd-signature-type">ClientFactory</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Build<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, jenkinsHost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, buildPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_api_.html#buildresponse" class="tsd-signature-type">BuildResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/7cb8cd3/src/client.ts#L18">client.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/7cb8cd3/src/api/build.ts#L12">api/build.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Create a client for interacting with the Jenkins API</p>
+									<p>Get build details</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The username of a Jenkins user</p>
+									</div>
 								</li>
 								<li>
 									<h5>token: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Jenkins API token associated with the user</p>
+									</div>
 								</li>
 								<li>
 									<h5>jenkinsHost: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
+										<p>The hostname of the Jenkins instance</p>
+									</div>
+								</li>
+								<li>
+									<h5>buildPath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path to the build</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_client_.clientfactory.html" class="tsd-signature-type">ClientFactory</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>get</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AxiosRequestConfig</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AxiosPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/7cb8cd3/src/client.ts#L3">client.ts:3</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>url: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>options: <span class="tsd-signature-type">AxiosRequestConfig</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AxiosPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_api_.html#buildresponse" class="tsd-signature-type">BuildResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -162,7 +136,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="_api_build_.html">&quot;api/build&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -174,7 +148,7 @@
 					<li class=" tsd-kind-module">
 						<a href="_api_user_.html">&quot;api/user&quot;</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="_client_.html">&quot;client&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -196,14 +170,8 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_client_.clientfactory.html" class="tsd-kind-icon">Client<wbr>Factory</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_client_.html#client" class="tsd-kind-icon">client</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="_client_.html#get" class="tsd-kind-icon">get</a>
+						<a href="_api_build_.html#getbuild" class="tsd-kind-icon">get<wbr>Build</a>
 					</li>
 				</ul>
 			</nav>
