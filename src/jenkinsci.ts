@@ -1,6 +1,7 @@
-import { JenkinsOptions, JenkinsRequest, Job, Jobs, Options, User } from "./types";
+import { Build, JenkinsOptions, JenkinsRequest, Job, Jobs, Options, User } from "./types";
 import { getUser } from "./api/user";
 import { getJob, getJobs } from "./api/job";
+import { getBuild } from "./api/build";
 
 export class JenkinsCI {
   private username: string;
@@ -20,6 +21,15 @@ export class JenkinsCI {
    */
   defaults(): JenkinsRequest {
     return { username: this.username, token: this.token, jenkinsHost: this.jenkinsHost, options: this.options };
+  }
+
+  /**
+   * Gets details about a build
+   *
+   * @param buildPath Required, the path to the build
+   */
+  getBuild(buildPath: string): Promise<Build> {
+    return getBuild(this.username, this.token, this.jenkinsHost, buildPath);
   }
 
   /**
