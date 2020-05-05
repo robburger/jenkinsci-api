@@ -7,6 +7,14 @@
 export type BuildResponse = Build;
 
 /**
+ * Builds info
+ *
+ * @property {string} jobName - The path to the job
+ * @example GET : https://{jenkinsHost}/job/:buildPath/api/json
+ */
+export type BuildsResponse = Builds;
+
+/**
  * User info
  *
  * @property {string} username - A Jenkins user
@@ -79,6 +87,27 @@ export interface Build {
   changeSets?: ChangeSet[];
   /** a list of culprits for the build */
   culprits?: Culprit[];
+}
+
+export interface Builds {
+  /** internal Jenkins model */
+  _class?: string;
+  /** description of the job */
+  description?: string;
+  /** display name of the job */
+  displayName?: string;
+  /** full display name of the job, including enclosing folder names */
+  fullDisplayName?: string;
+  /** full name of the job */
+  fullName?: string;
+  /** name of the job */
+  name?: string;
+  /** url of the job */
+  url?: string;
+  /** details of the last 50 builds */
+  builds?: Build[];
+  /** next build number used by the job */
+  nextBuildNumber?: number;
 }
 
 export interface Artifacts {
