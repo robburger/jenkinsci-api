@@ -72,6 +72,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_api_build_.html#getbuild" class="tsd-kind-icon">get<wbr>Build</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_api_build_.html#getbuilds" class="tsd-kind-icon">get<wbr>Builds</a></li>
 							</ul>
 						</section>
 					</div>
@@ -89,7 +90,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/api/build.ts#L12">api/build.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/api/build.ts#L12">api/build.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -125,6 +126,55 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_api_.html#buildresponse" class="tsd-signature-type">BuildResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getbuilds" class="tsd-anchor"></a>
+					<h3>get<wbr>Builds</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Builds<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, jenkinsHost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, jobName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_api_.html#buildsresponse" class="tsd-signature-type">BuildsResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/api/build.ts#L30">api/build.ts:30</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get build details for a job</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The username of a Jenkins user</p>
+									</div>
+								</li>
+								<li>
+									<h5>token: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Jenkins API token associated with the user</p>
+									</div>
+								</li>
+								<li>
+									<h5>jenkinsHost: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The hostname of the Jenkins instance</p>
+									</div>
+								</li>
+								<li>
+									<h5>jobName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the job</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_api_.html#buildsresponse" class="tsd-signature-type">BuildsResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -172,6 +222,9 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_api_build_.html#getbuild" class="tsd-kind-icon">get<wbr>Build</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_api_build_.html#getbuilds" class="tsd-kind-icon">get<wbr>Builds</a>
 					</li>
 				</ul>
 			</nav>

@@ -90,6 +90,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_jenkinsci_.jenkinsci.html#defaults" class="tsd-kind-icon">defaults</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_jenkinsci_.jenkinsci.html#getbuild" class="tsd-kind-icon">get<wbr>Build</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_jenkinsci_.jenkinsci.html#getbuilds" class="tsd-kind-icon">get<wbr>Builds</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_jenkinsci_.jenkinsci.html#getjob" class="tsd-kind-icon">get<wbr>Job</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_jenkinsci_.jenkinsci.html#getjobs" class="tsd-kind-icon">get<wbr>Jobs</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_jenkinsci_.jenkinsci.html#getuser" class="tsd-kind-icon">get<wbr>User</a></li>
@@ -111,7 +112,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/jenkinsci.ts#L10">jenkinsci.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/jenkinsci.ts#L10">jenkinsci.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -151,7 +152,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/jenkinsci.ts#L22">jenkinsci.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/jenkinsci.ts#L22">jenkinsci.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -173,7 +174,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/jenkinsci.ts#L31">jenkinsci.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/jenkinsci.ts#L31">jenkinsci.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -195,6 +196,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getbuilds" class="tsd-anchor"></a>
+					<h3>get<wbr>Builds</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Builds<span class="tsd-signature-symbol">(</span>jobName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_api_.builds.html" class="tsd-signature-type">Builds</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/jenkinsci.ts#L40">jenkinsci.ts:40</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets build details for a job</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>jobName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Required, the path to the build</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_api_.builds.html" class="tsd-signature-type">Builds</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getjob" class="tsd-anchor"></a>
 					<h3>get<wbr>Job</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -204,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/jenkinsci.ts#L51">jenkinsci.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/jenkinsci.ts#L60">jenkinsci.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -227,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/jenkinsci.ts#L55">jenkinsci.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/jenkinsci.ts#L64">jenkinsci.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -250,7 +282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/jenkinsci.ts#L47">jenkinsci.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/jenkinsci.ts#L56">jenkinsci.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -281,7 +313,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/jenkinsci.ts#L38">jenkinsci.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/jenkinsci.ts#L47">jenkinsci.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -348,6 +380,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_jenkinsci_.jenkinsci.html#getbuild" class="tsd-kind-icon">get<wbr>Build</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_jenkinsci_.jenkinsci.html#getbuilds" class="tsd-kind-icon">get<wbr>Builds</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_jenkinsci_.jenkinsci.html#getjob" class="tsd-kind-icon">get<wbr>Job</a>

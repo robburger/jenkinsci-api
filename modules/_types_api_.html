@@ -74,6 +74,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_api_.artifacts.html" class="tsd-kind-icon">Artifacts</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_api_.build.html" class="tsd-kind-icon">Build</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_api_.buildsummary.html" class="tsd-kind-icon">Build<wbr>Summary</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_api_.builds.html" class="tsd-kind-icon">Builds</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_api_.changeset.html" class="tsd-kind-icon">Change<wbr>Set</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_api_.culprit.html" class="tsd-kind-icon">Culprit</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_api_.executorsummary.html" class="tsd-kind-icon">Executor<wbr>Summary</a></li>
@@ -89,6 +90,7 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_api_.html#buildresponse" class="tsd-kind-icon">Build<wbr>Response</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_api_.html#buildsresponse" class="tsd-kind-icon">Builds<wbr>Response</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_api_.html#jobresponse" class="tsd-kind-icon">Job<wbr>Response</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_api_.html#jobsresponse" class="tsd-kind-icon">Jobs<wbr>Response</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_api_.html#userresponse" class="tsd-kind-icon">User<wbr>Response</a></li>
@@ -105,7 +107,7 @@
 					<div class="tsd-signature tsd-kind-icon">Build<wbr>Response<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_api_.build.html" class="tsd-signature-type">Build</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/types/api.ts#L7">types/api.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L7">types/api.ts:7</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -123,12 +125,35 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="buildsresponse" class="tsd-anchor"></a>
+					<h3>Builds<wbr>Response</h3>
+					<div class="tsd-signature tsd-kind-icon">Builds<wbr>Response<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_api_.builds.html" class="tsd-signature-type">Builds</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L15">types/api.ts:15</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Builds info</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>property</dt>
+							<dd><p>{string} jobName - The path to the job</p>
+							</dd>
+							<dt>example</dt>
+							<dd><p>GET : https://{jenkinsHost}/job/:buildPath/api/json</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="jobresponse" class="tsd-anchor"></a>
 					<h3>Job<wbr>Response</h3>
 					<div class="tsd-signature tsd-kind-icon">Job<wbr>Response<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_api_.job.html" class="tsd-signature-type">Job</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/types/api.ts#L24">types/api.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L32">types/api.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -152,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">Jobs<wbr>Response<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_api_.jobs.html" class="tsd-signature-type">Jobs</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/types/api.ts#L32">types/api.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L40">types/api.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -175,7 +200,7 @@
 					<div class="tsd-signature tsd-kind-icon">User<wbr>Response<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_api_.user.html" class="tsd-signature-type">User</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/fa23dd7/src/types/api.ts#L15">types/api.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L23">types/api.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -244,6 +269,9 @@
 						<a href="../interfaces/_types_api_.buildsummary.html" class="tsd-kind-icon">Build<wbr>Summary</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_types_api_.builds.html" class="tsd-kind-icon">Builds</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_types_api_.changeset.html" class="tsd-kind-icon">Change<wbr>Set</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
@@ -272,6 +300,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_types_api_.html#buildresponse" class="tsd-kind-icon">Build<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="_types_api_.html#buildsresponse" class="tsd-kind-icon">Builds<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_types_api_.html#jobresponse" class="tsd-kind-icon">Job<wbr>Response</a>

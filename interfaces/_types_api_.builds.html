@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BuildSummary | jenkinsci-api</title>
+	<title>Builds | jenkinsci-api</title>
 	<meta name="description" content="Documentation for jenkinsci-api">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/_types_api_.html">&quot;types/api&quot;</a>
 				</li>
 				<li>
-					<a href="_types_api_.buildsummary.html">BuildSummary</a>
+					<a href="_types_api_.builds.html">Builds</a>
 				</li>
 			</ul>
-			<h1>Interface BuildSummary</h1>
+			<h1>Interface Builds</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">BuildSummary</span>
+						<span class="target">Builds</span>
 					</li>
 				</ul>
 			</section>
@@ -82,9 +82,15 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.buildsummary.html#_class" class="tsd-kind-icon">_class</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.buildsummary.html#number" class="tsd-kind-icon">number</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.buildsummary.html#url" class="tsd-kind-icon">url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.builds.html#_class" class="tsd-kind-icon">_class</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.builds.html#builds" class="tsd-kind-icon">builds</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.builds.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.builds.html#displayname" class="tsd-kind-icon">display<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.builds.html#fulldisplayname" class="tsd-kind-icon">full<wbr>Display<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.builds.html#fullname" class="tsd-kind-icon">full<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.builds.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.builds.html#nextbuildnumber" class="tsd-kind-icon">next<wbr>Build<wbr>Number</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_api_.builds.html#url" class="tsd-kind-icon">url</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,7 +104,7 @@
 					<div class="tsd-signature tsd-kind-icon">_class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L240">types/api.ts:240</a></li>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L94">types/api.ts:94</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -108,17 +114,107 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="number" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> number</h3>
-					<div class="tsd-signature tsd-kind-icon">number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<a name="builds" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> builds</h3>
+					<div class="tsd-signature tsd-kind-icon">builds<span class="tsd-signature-symbol">:</span> <a href="_types_api_.build.html" class="tsd-signature-type">Build</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L242">types/api.ts:242</a></li>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L108">types/api.ts:108</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>build number of the build</p>
+							<p>details of the last 50 builds</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="description" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L96">types/api.ts:96</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>description of the job</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="displayname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> display<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L98">types/api.ts:98</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>display name of the job</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fulldisplayname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> full<wbr>Display<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">full<wbr>Display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L100">types/api.ts:100</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>full display name of the job, including enclosing folder names</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fullname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> full<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">full<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L102">types/api.ts:102</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>full name of the job</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L104">types/api.ts:104</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>name of the job</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="nextbuildnumber" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> next<wbr>Build<wbr>Number</h3>
+					<div class="tsd-signature tsd-kind-icon">next<wbr>Build<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L110">types/api.ts:110</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>next build number used by the job</p>
 						</div>
 					</div>
 				</section>
@@ -128,12 +224,12 @@
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L244">types/api.ts:244</a></li>
+							<li>Defined in <a href="https://github.com/robburger/jenkinsci-api/blob/a9e4a43/src/types/api.ts#L106">types/api.ts:106</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>url of the build</p>
+							<p>url of the job</p>
 						</div>
 					</div>
 				</section>
@@ -185,27 +281,45 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_types_api_.build.html" class="tsd-kind-icon">Build</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_types_api_.buildsummary.html" class="tsd-kind-icon">Build<wbr>Summary</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_api_.buildsummary.html" class="tsd-kind-icon">Build<wbr>Summary</a>
+						<a href="_types_api_.builds.html" class="tsd-kind-icon">Builds</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_api_.buildsummary.html#_class" class="tsd-kind-icon">_class</a>
+								<a href="_types_api_.builds.html#_class" class="tsd-kind-icon">_class</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_api_.buildsummary.html#number" class="tsd-kind-icon">number</a>
+								<a href="_types_api_.builds.html#builds" class="tsd-kind-icon">builds</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_api_.buildsummary.html#url" class="tsd-kind-icon">url</a>
+								<a href="_types_api_.builds.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_api_.builds.html#displayname" class="tsd-kind-icon">display<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_api_.builds.html#fulldisplayname" class="tsd-kind-icon">full<wbr>Display<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_api_.builds.html#fullname" class="tsd-kind-icon">full<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_api_.builds.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_api_.builds.html#nextbuildnumber" class="tsd-kind-icon">next<wbr>Build<wbr>Number</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_api_.builds.html#url" class="tsd-kind-icon">url</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_api_.builds.html" class="tsd-kind-icon">Builds</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_types_api_.changeset.html" class="tsd-kind-icon">Change<wbr>Set</a>
 					</li>
